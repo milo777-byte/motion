@@ -4,11 +4,15 @@
   </header>
 
   <main>
+    <div *ngIf="fallDetected" class="alert">
+      ⚠️ ¡Posible caída detectada!
+    </div>
+
     <div class="sensor-wrapper">
       <div class="sensor-card">
         <h3>Acelerómetro</h3>
         <div class="sensor-icon">
-          <img src="images.png" alt="Acelerómetro">
+          <img src="/images.png" alt="Acelerómetro">
         </div>
         <div class="sensor-data">
           <p>X: {{motionData.acceleration?.x ?? 'No data'}}</p>
