@@ -1,0 +1,37 @@
+<div class="app-container">
+  <header>
+    <h1>Sensores</h1>
+  </header>
+
+  <main>
+    <div class="sensor-wrapper">
+      <div class="sensor-card">
+        <h3>Acelerómetro</h3>
+        <div class="sensor-icon">
+          <img src="images.png" alt="Acelerómetro">
+        </div>
+        <div class="sensor-data">
+          <p>X: {{motionData.acceleration?.x ?? 'No data'}}</p>
+          <p>Y: {{motionData.acceleration?.y ?? 'No data'}}</p>
+          <p>Z: {{motionData.acceleration?.z ?? 'No data'}}</p>
+        </div>
+      </div>
+
+      <div class="sensor-card">
+        <h3>Giroscopio</h3>
+        <div class="sensor-icon">
+          <img src="giros.png" alt="Giroscopio">
+        </div>
+        <div class="sensor-data">
+          <p>Alpha: {{motionData.rotation?.alpha ?? 'No data'}}°</p>
+          <p>Beta: {{motionData.rotation?.beta ?? 'No data'}}°</p>
+          <p>Gamma: {{motionData.rotation?.gamma ?? 'No data'}}°</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Emilio Montaleza App - Todos los derechos reservados</p>
+  </footer>
+</div>
